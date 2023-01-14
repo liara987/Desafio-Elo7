@@ -1,0 +1,37 @@
+.column-text {
+  width: 500px;
+  margin-bottom: 20px;
+
+  &-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  &-content {
+    text-align: justify;
+    font-size: 20px;
+  }
+
+  &-icon {
+    width: 100px;
+  }
+
+  @media screen and (min-width: 1023px) {
+    width: 300px;
+    margin-bottom: 0;
+
+    &-icon {
+      width: auto;
+    }
+
+    &-content {
+      font-size: 15px;
+    }
+
+    &-title {
+      font-size: 15px;
+      margin: 20px 0;
+    }
+  }
+}
