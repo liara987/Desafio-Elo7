@@ -1,0 +1,32 @@
+.more-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &-title {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #39a4b2;
+    font-weight: bold;
+
+    &:link {
+      text-decoration: none;
+    }
+  }
+
+  &-line {
+    margin: 10px 0;
+    width: 200px;
+  }
+
+  svg {
+    width: 24px;
+  }
+
+  @media screen and (min-width: 1023px) {
+    &-line {
+      margin: 20px 0;
+    }
+  }
+}
