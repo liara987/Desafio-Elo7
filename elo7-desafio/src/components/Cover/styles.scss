@@ -1,0 +1,29 @@
+.cover {
+  position: relative;
+  display: flex;
+  
+  &-title {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #333;
+  }
+
+  &-image {
+    width: 100%;
+    height: auto;
+  }
+
+  @media screen and (min-width: 1023px) {
+    &-title {
+      font-size: 60px;
+    }
+  }
+}
