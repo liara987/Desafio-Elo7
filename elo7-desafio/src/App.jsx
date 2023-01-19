@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import "./App.scss";
 
 //Componentes
@@ -59,7 +59,13 @@ function userWindowSize() {
 }
 
 function App() {
-  const [height, width] = userWindowSize();
+  const [width] = userWindowSize();
+
+  const ref = useRef(null);
+
+  const handleClick = () => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   function isMobile() {
     return width > 1023;
@@ -84,7 +90,9 @@ function App() {
           tecendo uma série de novos desafios.
         </p>
 
-        <MoreInfo title="vagas em aberto" url="https://jobs.kenoby.com/elo7" />
+        <div onClick={handleClick}>
+          <MoreInfo title="vagas em aberto" />
+        </div>
 
         <section className="about-us">
           <div className="our-history">
@@ -143,12 +151,14 @@ function App() {
           />
         </section>
 
-        <MoreInfo title="saiba mais" url="https://jobs.kenoby.com/elo7" />
+        <MoreInfo title="saiba mais" url="https://www.elo7.com.br/sobre" />
 
         <Cover image={bottomImage} imageAlt="Salão de festa" />
 
         <section className="our-jobs">
-          <h2 className="our-jobs-title">vagas em aberto</h2>
+          <h2 className="our-jobs-title" ref={ref}>
+            vagas em aberto
+          </h2>
           <JobList />
         </section>
       </div>
