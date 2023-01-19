@@ -151,7 +151,7 @@ function App() {
           />
         </section>
 
-        <MoreInfo title="saiba mais" url="https://www.elo7.com.br/sobre" />
+        <MoreInfo title="saiba mais" url="https://jobs.kenoby.com/elo7" />
 
         <Cover image={bottomImage} imageAlt="Salão de festa" />
 
