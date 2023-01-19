@@ -41,7 +41,7 @@ function JobList() {
           if (job.active) {
             return (
               <li className="job-list-item" key={job.id}>
-                <span className="job-list-item-role">{job.role}</span>
+                <a className="job-list-item-role" href={job.link}>{job.role}</a>
                 <span className="job-list-item-neighborhood">
                   {job.remote ? "Remoto" : job.adress}
                 </span>
