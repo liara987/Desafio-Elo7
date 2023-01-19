@@ -4,6 +4,8 @@
 
 **Objetivo:** Desenvolver uma landing page, com uma tela principal contendo um resumo sobre o Elo7, como é trabalhar aqui, alguns depoimentos e nossa cultura, além de conter uma listagem das vagas em aberto.
 
+### Solução em produção no link https://desafio-elo7.vercel.app/
+
 ## Requisitos
 
 - [x] Crie um repositório no seu Github;
