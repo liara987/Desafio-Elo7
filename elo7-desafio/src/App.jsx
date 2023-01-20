@@ -59,7 +59,7 @@ function userWindowSize() {
 }
 
 function App() {
-  const [width] = userWindowSize();
+  const [height, width] = userWindowSize();
 
   const ref = useRef(null);
 
@@ -67,7 +67,7 @@ function App() {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-  function isMobile() {
+  function isMobile() {    
     return width < 1023;
   }
 
@@ -97,8 +97,8 @@ function App() {
         <section className="about-us">
           <div className="our-history">
             <VideoPlayer
-              height={isMobile() ? "200" : "400"}
-              width={isMobile() ? "300" : "700"}
+              height={isMobile() ? "220" : "400"}
+              width={isMobile() ? "320" : "700"}
               title="Elo7 | 12 Anos - Faça Parte dessa História"
               id="Q9x8cT5Q-us"
             />
