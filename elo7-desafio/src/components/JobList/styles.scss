@@ -1,4 +1,6 @@
 .job-list {
+  padding: 10px;
+
   &-title {
     text-align: left;
     text-transform: uppercase;
@@ -22,7 +24,7 @@
       margin-bottom: 0;
     }
 
-    span {
+    &-neighborhood {
       font-size: 15px;
     }
 
@@ -41,14 +43,22 @@
   }
 
   @media screen and (min-width: 1023px) {
+    padding: 0;
+
     &-title {
+      font-size: 20px;
       margin: 30px 0;
     }
 
     &-item {
       flex-direction: row;
-      justify-content: space-between; 
-      margin-bottom: 15px;     
+      justify-content: space-between;
+      margin-bottom: 15px;
+
+      &-role,
+      &-neighborhood {
+        font-size: 18px;
+      }
     }
   }
 }

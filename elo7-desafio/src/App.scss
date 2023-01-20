@@ -1,15 +1,17 @@
 .App {
   .container {
-    margin: 10px;
+    margin: 0;
 
     .main-text {
       text-align: justify;
       font-size: 15px;
       margin: 0 0 10px 0;
+      padding: 10px;
     }
 
     .about-us {
-      margin-top: 20px;      
+      margin-top: 20px;
+      padding: 10px;
       background-color: #f8f8f8;
 
       .our-history {
@@ -84,6 +86,7 @@
         text-align: center;
         font-size: 25px;
         line-height: 30px;
+        padding: 0;
       }
 
       .about-us {
@@ -106,6 +109,7 @@
           }
 
           &-text {
+            font-size: 20px;
             margin: 10px 0 0 0;
           }
         }
