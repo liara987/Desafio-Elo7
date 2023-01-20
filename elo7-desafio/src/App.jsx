@@ -68,7 +68,7 @@ function App() {
   };
 
   function isMobile() {
-    return width > 1023;
+    return width < 1023;
   }
 
   return (
@@ -97,8 +97,8 @@ function App() {
         <section className="about-us">
           <div className="our-history">
             <VideoPlayer
-              height={isMobile() ? "400" : "350"}
-              width={isMobile() ? "700" : "500"}
+              height={isMobile() ? "200" : "400"}
+              width={isMobile() ? "300" : "700"}
               title="Elo7 | 12 Anos - Faça Parte dessa História"
               id="Q9x8cT5Q-us"
             />
