@@ -4,21 +4,26 @@
 
 **Objetivo:** Desenvolver uma landing page, com uma tela principal contendo um resumo sobre o Elo7, como é trabalhar aqui, alguns depoimentos e nossa cultura, além de conter uma listagem das vagas em aberto.
 
-### Solução em produção no link https://desafio-elo7.vercel.app/
+### Solução em produção aqui **https://desafio-elo7.vercel.app/**
 
-## Requisitos
+## Passos concluidos
 
 - [x] Crie um repositório no seu Github;
-- [x] Commitar o progressão;
+- [x] Commitar a progressão;
 - [x] Pegar os dados das vagas desta [API](http://www.mocky.io/v2/5d6fb6b1310000f89166087b);
 - [x] Tratar os dados obtidos do mock:
   - [x] Não mostrar as vagas inativas;
   - [x] Para os dados sem localização, substituir pela palavra "Remoto".
-- [x] Layout Responsivo
-- [x] Linguagem Javascript
-- [x] Estilo Sass
-- [x] Requisição Axios
-- [x] Framework React
+- [x] Deixar o Layout Responsivo
+
+## Tecnologias utlizadas
+
+- Linguagem [**Javascript**](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- Framework [**React**](https://reactjs.org/)
+- Requisição [**Axios**](https://axios-http.com/docs/intro)
+- Estilo [**Sass**](https://sass-lang.com/)
+- Ferramenta de build [**Vite**](https://vitejs.dev/)
+- Deploy [**Vercel**](https://vercel.com/)
 
 ## Como rodar localmente
 
